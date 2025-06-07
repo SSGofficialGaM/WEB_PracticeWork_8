@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подорожі Україною: Київ</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            margin: 2rem; 
+        }
+        header, main { 
+            max-width: 1000px;
+            margin: auto; 
+        }
+        .icon { 
+            width: 24px; 
+            height: 24px; 
+            fill: #333; 
+            vertical-align: middle; 
+        }
+        .logo { 
+            width: 100px; 
+            height: auto; 
+        }
+        .gallery img { 
+            max-width: 100%;
+            width: 1000px; 
+            height: 625px; 
+            display: block; 
+            margin-bottom: 1rem; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://s.tmimgcdn.com/scr/800x500/309000/sablon-logotipu-podorozi-navkolo-svitu_309024-original.jpg" alt="Логотип подорожей" class="logo">
+        <svg class="icon">
+            <use xlink:href="images/icons.svg#icon-location"></use>
+        </svg>
+        <span>Відкрий Україну</span>
+    </header>
+
+    <main>
+        <h1>Київ — столиця України</h1>
+        <picture>
+            <source
+                srcset="images/kyiv-large.webp 1920w,
+                        images/kyiv-medium.webp 1280w,
+                        images/kyiv-small.webp 640w"
+                sizes="(max-width: 640px) 100vw,
+                       (max-width: 1280px) 50vw,
+                       1920px"
+                type="image/webp">
+            <img src="images/kyiv-fallback0.jpg" alt="Панорама Києва" loading="lazy">
+        </picture>
+
+        <h2>Карта міста</h2>
+        <img src="images/kyiv-map.png" alt="Карта Києва" loading="lazy">
+
+        <h2>Наші переваги</h2>
+        <div class="gallery">
+            <img src="images/podorozhi-kyievom.svg" alt="Векторне лого" loading="lazy">
+            <img src="images/kyiv-fallback.jpg" alt="Фото міста" loading="lazy">
+            <img src="https://kcacmt.univ.kiev.ua/sites/default/files/risunok11.jpg" alt="Софійський собор" loading="lazy">
+            <img src="https://kcacmt.univ.kiev.ua/sites/default/files/risuno2.jpg" alt="Золоті ворота" loading="lazy">
+            <img src="https://kcacmt.univ.kiev.ua/sites/default/files/risunok5.jpg" alt="Миколаївський костьол" loading="lazy">
+            <img src="https://kcacmt.univ.kiev.ua/sites/default/files/risunok8.jpg" alt="Будинок з химерами" loading="lazy">
+        </div>
+    </main>
+
+    <svg style="display: none;">
+        <symbol id="icon-location" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5
+                     c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+        </symbol>
+    </svg>
+
+</body>
+</html>
